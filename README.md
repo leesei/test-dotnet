@@ -19,7 +19,7 @@ dotnet sln add cli/
 dotnet sln add lib/
 dotnet clean
 dotnet build
-dotnet run -p cli 2019-04-01
+dotnet run -p cli -- 2019-04-01
 
 # add package dependency to lib
 dotnet add lib/ package Humanizer.Core

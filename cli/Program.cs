@@ -19,7 +19,7 @@ namespace cli
         {
             DateTime now = DateTime.Now;
             DateTime input = args.Length != 0 ? DateTime.Parse(args[0]) : now;
-            Console.WriteLine("args:");
+            Console.WriteLine($"{args.Length} args:");
             args.ForEachWithIndex((item, idx) => Console.WriteLine($"[{idx}]: {item}"));
 
             Console.WriteLine();
